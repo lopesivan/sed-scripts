@@ -18,10 +18,10 @@ chmod-644-$(PROJECT):
 
 install-$(PROJECT): chmod-755-$(PROJECT)
 	@(for f in $(SRCS); \
-		do ln -s `pwd`/$$f $(prefix)/bin/sed.$${f%.sed};  \
+		do sudo ln -s `pwd`/$$f $(prefix)/bin/sed.$${f%.sed};  \
 	done)
 
 clean: chmod-644-$(PROJECT)
 	@(for f in $(SRCS); \
-		do rm $(prefix)/bin/sed.$${f%.sed};  \
+		do sudo rm $(prefix)/bin/sed.$${f%.sed};  \
 	done)
