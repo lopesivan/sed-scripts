@@ -17,6 +17,7 @@ chmod-644-$(PROJECT):
 	done)
 
 install-$(PROJECT): chmod-755-$(PROJECT)
+	mkdir -p $(PREFIX)/bin
 	@(for f in $(SRCS); \
 		do  cp $$f $(PREFIX)/bin/sed.$${f%.sed};  \
 	done)
