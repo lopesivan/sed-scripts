@@ -18,7 +18,7 @@ chmod-644-$(PROJECT):
 
 install-$(PROJECT): chmod-755-$(PROJECT)
 	@(for f in $(SRCS); \
-		do  ln -s `pwd`/$$f $(PREFIX)/bin/sed.$${f%.sed};  \
+		do  cp $$f $(PREFIX)/bin/sed.$${f%.sed};  \
 	done)
 
 clean: chmod-644-$(PROJECT)
