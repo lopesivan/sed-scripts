@@ -26,11 +26,11 @@ s/\([^ ]\+\)\.cpp\s*.*/target  := \1/
 p;g
 
 i\
-targets := tags $(target)\
+targets := $(target)\
 \
 # Compile\
 .cpp.o:\
-	$(CC) $(CFLAGS) $<\
+	$(CC) $(GDBFLAGS) $(CFLAGS) $<\
 \
 all: $(targets)\
 
@@ -72,11 +72,11 @@ s/\([^ ]\+\)\.c\s*.*/target  := \1/
 p;g
 
 i\
-targets := tags $(target)\
+targets := $(target)\
 \
 # Compile\
 .c.o:\
-	$(CC) $(CFLAGS) $<\
+	$(CC) $(GDBFLAGS) $(CFLAGS) $<\
 \
 all: $(targets)\
 

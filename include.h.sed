@@ -68,10 +68,10 @@ s/^/\/\/Code Here! /
 # insert comment
 i\
 /**\
- *  @author <A HREF="mailto:lopesivan@poli.ufrj.br">Ivan Carlos Da Silva Lopes</a> and\
- *          <A HREF="mailto:sbvillasboas@gmail.com">Sergio Barbosa Villas-Boas\
+ *  @author <a href="mailto:lopesivan@poli.ufrj.br">Ivan Carlos Da Silva Lopes</a> and\
+ *          <a href="mailto:sbvillasboas@gmail.com">Sergio Barbosa Villas-Boas\
  *          (sbVB)</a>\
- *  @version $Revision: 1.00 $ $Date: 2000/11/18 00:59:14 $\
+ *  @version $Revision: 1.00 $ $Date: 2020/11/18 00:59:14 $\
  *\/\
 \
 //////////////////////////////////////////////////////////////////////////////\

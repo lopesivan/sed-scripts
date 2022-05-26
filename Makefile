@@ -1,6 +1,6 @@
 PROJECT = sed-scripts
 
-prefix ?= /usr/local
+PREFIX ?= /workspace/bubu
 
 SRCS = $(shell ls *.sed)
 
@@ -18,10 +18,10 @@ chmod-644-$(PROJECT):
 
 install-$(PROJECT): chmod-755-$(PROJECT)
 	@(for f in $(SRCS); \
-		do sudo ln -s `pwd`/$$f $(prefix)/bin/sed.$${f%.sed};  \
+		do  ln -s `pwd`/$$f $(PREFIX)/bin/sed.$${f%.sed};  \
 	done)
 
 clean: chmod-644-$(PROJECT)
 	@(for f in $(SRCS); \
-		do sudo rm $(prefix)/bin/sed.$${f%.sed};  \
+		do  rm $(PREFIX)/bin/sed.$${f%.sed};  \
 	done)
