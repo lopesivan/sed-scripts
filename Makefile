@@ -1,6 +1,6 @@
 PROJECT = sed-scripts
 
-PREFIX ?= /workspace/bubu
+PREFIX ?= /usr/local
 
 SRCS = $(shell ls *.sed)
 
