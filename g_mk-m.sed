@@ -107,7 +107,8 @@ p;g
 i\
 \
 CFLAGS=-g -std=gnu99 -Wall -Wno-parentheses\
-LDFLAGS=-lm
+#LDFLAGS=\
+LDLIBS=-lm
 
 s/\([^ ]\+\)\.c\s*.*/\nall  : \1/
 

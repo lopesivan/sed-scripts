@@ -65,6 +65,7 @@ LD = $(CC)\
 \
 CFLAGS   = -c\
 LDFLAGS  = -o\
+LDLIBS   = -lm\
 GDBFLAGS = -g\
 
 s/.*/sources := &/
