@@ -26,7 +26,7 @@ s/\([^ ]\+\)\.cpp\s*.*/target  := \1/
 p;g
 
 i\
-targets := tags $(target)\
+targets := $(target)\
 \
 # Compile\
 .cpp.o:\
@@ -34,9 +34,6 @@ targets := tags $(target)\
 \
 all: $(targets)\
 \
-tags:\
-\t\/bin\/rm -rf tags\
-\tctags -R --c++-kinds=+p --fields=+iaS --extra=+q $(sources) *.h\
 
 s/\([^ ]\.cpp\)\s*/\1: /
 s/\.cpp//
@@ -77,7 +74,7 @@ s/\([^ ]\+\)\.c\s*.*/target  := \1/
 p;g
 
 i\
-targets := tags $(target)\
+targets := $(target)\
 \
 # Compile\
 .c.o:\
@@ -85,9 +82,6 @@ targets := tags $(target)\
 \
 all: $(targets)\
 \
-tags:\
-\t\/bin\/rm -rf tags\
-\tctags -R --c-kinds=+p --fields=+iaS --extra=+q $(sources) *.h\
 
 s/\([^ ]\.c\)\s*/\1: /
 s/\.c//
